@@ -1,0 +1,3 @@
+.ng-invalid.ng-touched:not(form){
+    outline: 0;
+}
