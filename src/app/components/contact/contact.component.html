@@ -31,6 +31,16 @@
 		</div>
 
 		<div class="form-group row">
+			<label class="col-2 col-form-label">País</label>
+			<div class="col-md-10">
+				<select class="form-control" name="pais" [(ngModel)]="usuario.pais">
+					<option value="">Seleccione un país</option>
+					<option *ngFor="let pais of paises" [value]="pais.codigo">{{ pais.nombre }}</option>
+				</select>
+			</div>
+		</div>
+
+		<div class="form-group row">
 			<label class="col-2 col-form-label">&nbsp;</label>
 			<div class="col-md-10">
 				<button type="submit" class="btn btn-outline-primary" [disabled]="form.invalid">Guardar</button>

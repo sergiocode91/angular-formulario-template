@@ -8,11 +8,20 @@ import { NgForm } from '@angular/forms'
 })
 export class ContactComponent implements OnInit {
 
-	usuario:object = {
+	usuario:Object = {
 		nombre: null,
 		apellido: null,
-		correo: null
+		correo: null,
+		pais: ''
 	}
+	paises:Object = [{
+		codigo: 'CRI',
+		nombre: 'Costa Rica'
+	},
+	{
+		codigo: 'ESP',
+		nombre: 'España'
+	}]
 
 	constructor() { }
 
