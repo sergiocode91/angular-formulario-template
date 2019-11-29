@@ -33,10 +33,20 @@
 		<div class="form-group row">
 			<label class="col-2 col-form-label">País</label>
 			<div class="col-md-10">
-				<select class="form-control" name="pais" [(ngModel)]="usuario.pais">
+				<select class="form-control" name="pais" [(ngModel)]="usuario.pais" required>
 					<option value="">Seleccione un país</option>
 					<option *ngFor="let pais of paises" [value]="pais.codigo">{{ pais.nombre }}</option>
 				</select>
+			</div>
+		</div>
+
+		<div class="form-group row">
+			<label class="col-2 col-form-label">Sexo</label>
+			<div class="col-md-10">
+				<div *ngFor="let sexo of sexos" class="form-check form-check-inline">
+					<input class="form-check-input" type="radio" name="sexo" [value]="sexo" [(ngModel)]="usuario.sexo">
+					<label class="form-check-label">{{ sexo }}</label>
+				</div>
 			</div>
 		</div>
 
@@ -46,6 +56,7 @@
 				<button type="submit" class="btn btn-outline-primary" [disabled]="form.invalid">Guardar</button>
 			</div>
 		</div>
+
 	</form>
 
 	<pre>

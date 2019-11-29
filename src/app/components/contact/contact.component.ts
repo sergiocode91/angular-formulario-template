@@ -12,7 +12,8 @@ export class ContactComponent implements OnInit {
 		nombre: null,
 		apellido: null,
 		correo: null,
-		pais: ''
+		pais: '',
+		sexo: 'Hombre'
 	}
 	paises:Object = [{
 		codigo: 'CRI',
@@ -22,6 +23,7 @@ export class ContactComponent implements OnInit {
 		codigo: 'ESP',
 		nombre: 'España'
 	}]
+	sexos:String[] = ['Hombre', 'Mujer'];
 
 	constructor() { }
 
