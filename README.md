@@ -9,7 +9,7 @@ Este proyecto ha sido generado con [Angular CLI](https://github.com/angular/angu
 
 #### Clonar repositorio
 ```
-$ git clone https://github.com/srojas091/angular-lazy-loading.git
+$ git clone https://github.com/srojas091/angular-formulario-template.git
 ```
 
 #### Instalar dependencias
